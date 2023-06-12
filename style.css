@@ -1,0 +1,168 @@
+:root {
+    --col-prim-blue: hsl(223, 87%, 63%);
+    --col-sec-pale-blue:  hsl(223, 100%, 88%);
+    --col-sec-light-red: hsl(354, 100%, 66%);
+    --col-neut-gray: hsl(0, 0%, 59%);
+    --col-neut-very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+main {
+    font-size: 1.25rem;
+    min-height: 100dvh;
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+.main-cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.v-center {
+    justify-items: center;
+    justify-content: center;
+}
+
+h1 span {
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.subs {
+    font-size: .85rem;
+}
+.img-cont img {
+    max-width: 100%;
+    height: auto;
+}
+
+.dashboard {
+    width: calc(100% + 2rem);
+}
+
+form, form input, form button {
+    width: 100%;
+}
+
+form {
+    display: grid;
+    grid-auto-rows: 1fr;
+    row-gap: .5rem;
+    padding: 2rem 0;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+
+form input, form button {
+    padding: .8rem;
+    border-radius: 2rem;
+    max-height: 3em;
+}
+
+.submit input {
+    border: 2px solid var(--col-sec-pale-blue);
+    padding-left: 2rem;
+}
+
+.submit input::placeholder {
+    color: var(--col-sec-pale-blue);
+    font-weight: 300;
+}
+
+input.invalid {
+    border: 2px solid var(--col-sec-light-red);
+}
+
+.submit button {
+    background-color: var(--col-prim-blue);
+    color: white;
+    border: transparent;
+    box-shadow: 0 10px 10px var(--col-sec-pale-blue);
+}
+
+.social-icons {
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons svg{
+    border: 1px solid var(--col-neut-gray);
+    border-radius: 50%;
+    padding: .5rem;
+    aspect-ratio: 1 / 1;
+}
+
+.copyright {
+    font-size: .8rem;
+    text-align: center;
+    padding: .5rem;
+}
+
+.error {
+    width: 100%;
+    text-align: center;
+
+    font-size: .6em;
+    color: var(--col-sec-light-red);
+    font-style: italic;
+}
+
+@media screen and (min-width: 760px) {
+    section {
+        max-width: 48rem;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .subs {
+        font-size: 1em;
+    }
+
+    form {
+        display: flex;
+        width: 100%;
+        gap: 1rem;
+    }
+
+   .input {
+        flex-grow: 1.5;
+        position: relative;
+    }
+
+    .submit button {
+        max-width: 15rem;
+    }
+
+    .error {
+        position: absolute;
+        bottom: -1.5em;
+        left: 0rem;
+        text-align: left;
+        padding-left: 2em;
+    }
+}
