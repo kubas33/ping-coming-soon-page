@@ -30,9 +30,10 @@
         <h1><span>We are launching</span> soon!</h1>
         <p class="subs">Subscribe and get notified</p>
         <form class="submit" action="" aria-label="Notify Me form" aria-describedby="mail-error" novalidate>
-          <label class="input">
+          <label class="input" for="email">
+            <span class="sr-only">Type your email to be notified about launch</span>
             <p><input type="email" name="email" id="email" placeholder="Your email address..." required></p>
-            <p class="error" id="mail-error"></p>
+            <p class="error" id="mail-error" aria-live="polite"></p>
           </label>
           <button type="submit" id="btn-submit">Notify Me</button>
 
@@ -43,13 +44,13 @@
       </div>
       <footer class="v-center">
         <div class="social-icons v-center">
-          <a href="">
+          <a href="" title="facebook page">
             <i class="fa-brands fa-facebook"></i>
           </a>
-          <a href="">
+          <a href="" title="twitter profile">
             <i class="fa-brands fa-twitter"></i>
           </a>
-          <a href="">
+          <a href="" title="instagram profile">
             <i class="fa-brands fa-instagram"></i>
           </a>
         </div>
@@ -62,7 +63,7 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">pow4h</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/kubas33">pow4h</a>.
     </p>
   </footer>
 <script src="script.js"></script>

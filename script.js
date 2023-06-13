@@ -6,7 +6,7 @@ input.addEventListener("blur", handleInput);
 
 function handleInput() {
     if (input.validity.valueMissing) {
-        mailError.textContent = "Email cannot be empty";
+        mailError.textContent = "Whoops! It looks like you forgot to add your email";
         input.classList.add("invalid");
         console.log("Email cannot be empty");
     } else if (input.validity.typeMismatch) {
