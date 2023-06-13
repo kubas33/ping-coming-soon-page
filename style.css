@@ -1,8 +1,8 @@
 :root {
-    --col-prim-blue: hsl(223, 87%, 63%);
+    --col-prim-blue: hsl(223, 60%, 54%) ;
     --col-sec-pale-blue:  hsl(223, 100%, 88%);
-    --col-sec-light-red: hsl(354, 100%, 66%);
-    --col-neut-gray: hsl(0, 0%, 59%);
+    --col-sec-light-red: hsl(354, 59%, 53%);
+    --col-neut-gray: hsl(0, 0%, 46%);
     --col-neut-very-dark-blue: hsl(209, 33%, 12%);
     --col-neut-gray-transp: hsla(0, 0%, 59%, 50%);
 }
