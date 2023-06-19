@@ -173,6 +173,10 @@ input.invalid {
     padding-bottom: 1rem;
 }
 
+*:focus{
+    outline: 3px solid var(--col-neut-very-dark-blue)
+}   
+
 @media screen and (min-width: 500px) {
     section {
         max-width: 44rem;
@@ -224,12 +228,14 @@ input.invalid {
     .dashboard {
         margin-top: 3rem;
     }
+
+
 }
 
 @media (hover: hover) and (pointer: fine) {
     button:hover {
         cursor: pointer; 
-        opacity: .85;
+        opacity: .85;   
         scale: 1.02;
         transition: all .3s;
     }
