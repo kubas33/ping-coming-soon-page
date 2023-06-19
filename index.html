@@ -19,24 +19,21 @@
   </style>
 </head>
 <body>
-  <main class="v-center">
   <section class="v-center">
+    <header>
+      <div class="img-cont v-center">
+        <img src="./images/logo.svg" alt="logo of ping">
+      </div>
+    </header>
+    <main class="v-center">
       <div class="main-cont v-center">
-        <header>
-          <div class="img-cont v-center">
-            <img src="./images/logo.svg" alt="">
-          </div>
-        </header>
         <h1><span>We are launching</span> soon!</h1>
         <p class="subs">Subscribe and get notified</p>
-        <form class="submit" action="" aria-label="Notify Me form" aria-describedby="mail-error" novalidate>
-          <label class="input" for="email">
-            <span class="sr-only">Type your email to be notified about launch</span>
-            <p><input type="email" name="email" id="email" placeholder="Your email address..." required></p>
-            <p class="error" id="mail-error" aria-live="polite"></p>
-          </label>
+        <form class="submit" action="" aria-label="Notify Me form"  novalidate>
+          <label class="input sr-only" for="email">your email address </label>
+          <input type="email" name="email" id="email" placeholder="Your email address..." aria-describedby="mail-error" aria-label="" required>
+          <p class="error" id="mail-error" aria-live="polite"></p>
           <button type="submit" id="btn-submit">Notify Me</button>
-
         </form>
         <div class="img-cont v-center dashboard">
           <img src="./images/illustration-dashboard.png" alt="dashboard with graphs">
@@ -44,13 +41,13 @@
       </div>
       <footer class="v-center">
         <div class="social-icons v-center">
-          <a href="" title="facebook page">
+          <a href="" aria-label="facebook page">
             <i class="fa-brands fa-facebook"></i>
           </a>
-          <a href="" title="twitter profile">
+          <a href="" aria-label="twitter profile">
             <i class="fa-brands fa-twitter"></i>
           </a>
-          <a href="" title="instagram profile">
+          <a href="" aria-label="instagram profile">
             <i class="fa-brands fa-instagram"></i>
           </a>
         </div>
@@ -58,8 +55,8 @@
           &copy; Copyright Ping. All rights reserved.
         </p>
       </footer>
-    </section>
-  </main>
+    </main>
+  </section>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
